@@ -1,17 +1,20 @@
 import React from 'react';
 import './App.css';
 import Particles from 'react-particles-js';
+import undraw_welcome_cats_thqn from './undraw_welcome_cats_thqn.svg'
 
 function App() {
 	return (
 		<div
 		// id="container"
 		>
-			<div >
-<div className="puff-in-center" id="welcome">
-    WELCOME
-</div>
-				<Particles id="particles-js"
+			<div>
+				<div className="scale-in-center" id="welcome">
+                    <img src={undraw_welcome_cats_thqn}/>
+					
+				</div>
+				<Particles
+					id="particles-js"
 					params={{
 						particles: {
 							number: {
@@ -41,7 +44,8 @@ function App() {
 								}
 							},
 							line_linked: {
-								enable: false
+                                enable: true,
+                                distance: 100
 							},
 							move: {
 								// enable: false,
@@ -57,11 +61,10 @@ function App() {
 							},
 							modes: {
 								repulse: {
-									distance:100
+									distance: 100
 								}
 							}
-                        },
-                        
+						}
 					}}
 				/>
 			</div>
