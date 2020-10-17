@@ -49,7 +49,7 @@ function App() {
 							},
 							move: {
 								// enable: false,
-								speed: 0.2
+								speed: 1
 							}
 						},
 						interactivity: {
