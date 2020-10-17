@@ -1,26 +1,72 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Particles from 'react-particles-js';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div
+		// id="container"
+		>
+			<div >
+<div className="puff-in-center" id="welcome">
+    WELCOME
+</div>
+				<Particles id="particles-js"
+					params={{
+						particles: {
+							number: {
+								value: 200,
+								density: {
+									enable: true,
+									value_area: 1000
+								}
+							},
+							color: {
+								value: '#fff'
+							},
+							opacity: {
+								value: 0.5,
+								//opacity changes (blinking)
+								anim: {
+									enable: true
+								}
+							},
+							size: {
+								value: 10,
+								random: true,
+								//size changes (smaller and larger)
+								anim: {
+									enable: true,
+									speed: 1
+								}
+							},
+							line_linked: {
+								enable: false
+							},
+							move: {
+								// enable: false,
+								speed: 0.2
+							}
+						},
+						interactivity: {
+							events: {
+								onhover: {
+									enable: true,
+									mode: 'repulse'
+								}
+							},
+							modes: {
+								repulse: {
+									distance:100
+								}
+							}
+                        },
+                        
+					}}
+				/>
+			</div>
+		</div>
+	);
 }
 
 export default App;
