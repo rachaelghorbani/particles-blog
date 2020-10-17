@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Particles from 'react-particles-js';
 import undraw_welcome_cats_thqn from './undraw_welcome_cats_thqn.svg'
+import star from './star.svg'
 
 function App() {
 	return (
@@ -18,12 +19,17 @@ function App() {
 					params={{
 						particles: {
 							number: {
-								value: 200,
+								value: 300,
 								density: {
 									enable: true,
 									value_area: 1000
 								}
-							},
+                            },
+                            // image: {
+                            //     src: star,
+                            //     width: 100,
+                            //     height: 100
+                            //   },
 							color: {
 								value: '#fff'
 							},
@@ -35,36 +41,24 @@ function App() {
 								}
 							},
 							size: {
-								value: 10,
+								value: 4,
 								random: true,
 								//size changes (smaller and larger)
 								anim: {
 									enable: true,
 									speed: 1
 								}
-							},
+                            },
+                           
 							line_linked: {
-                                enable: true,
+                                enable: false,
                                 distance: 100
 							},
 							move: {
 								// enable: false,
-								speed: 1
+								speed: 0.2
 							}
-						},
-						interactivity: {
-							events: {
-								onhover: {
-									enable: true,
-									mode: 'repulse'
-								}
-							},
-							modes: {
-								repulse: {
-									distance: 100
-								}
-							}
-						}
+                        },
 					}}
 				/>
 			</div>
