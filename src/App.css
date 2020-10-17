@@ -52,8 +52,6 @@ body{
 
 }
 #welcome{
-    color:white;
-    opacity: 0.4;
     position: absolute;
     display:flex;
     text-align: center;
@@ -63,8 +61,8 @@ body{
     height: 100vh;
 }
 .scale-in-center {
-	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
-	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+	-webkit-animation: scale-in-center 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+	        animation: scale-in-center 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
 }
 
 

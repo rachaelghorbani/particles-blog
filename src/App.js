@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import Particles from 'react-particles-js';
 import undraw_welcome_cats_thqn from './undraw_welcome_cats_thqn.svg'
-import star from './star.svg'
 
 function App() {
 	return (
@@ -11,7 +10,7 @@ function App() {
 		>
 			<div>
 				<div className="scale-in-center" id="welcome">
-                    <img src={undraw_welcome_cats_thqn}/>
+                    <img src={undraw_welcome_cats_thqn} alt="welcome cats"/>
 					
 				</div>
 				<Particles
@@ -19,7 +18,7 @@ function App() {
 					params={{
 						particles: {
 							number: {
-								value: 300,
+								value: 400,
 								density: {
 									enable: true,
 									value_area: 1000
@@ -41,18 +40,17 @@ function App() {
 								}
 							},
 							size: {
-								value: 4,
+								value: 7,
 								random: true,
 								//size changes (smaller and larger)
 								anim: {
 									enable: true,
-									speed: 1
+									speed: 3
 								}
                             },
                            
 							line_linked: {
                                 enable: false,
-                                distance: 100
 							},
 							move: {
 								// enable: false,
